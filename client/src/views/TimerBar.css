@@ -1,0 +1,11 @@
+.background{
+    background: #272b2f;
+    border-radius: 20px;
+    height: 8px;
+}
+
+.timer{
+    background-color: #439646;
+    border-radius: 20px;
+    height: 0.4rem;
+}

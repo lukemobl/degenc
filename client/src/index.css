@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Aero";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/Aero.ttf");
+}
+
+body {
+  background: #212529;
+  font-family: "Rubik", sans-serif !important;
+}
+
+button.css-1qyrjaz {
+  display: none !important;
+}
+
+html,
+body,
+#root {
+  height: 100%; /* ADDED */
+  margin: 0; /* ADDED */
+  font-family: "Rubik", sans-serif !important;
+}
+* {
+  -webkit-box-sizing: border-box; /* ADDED */
+  -moz-box-sizing: border-box; /* ADDED */
+  -ms-box-sizing: border-box; /* ADDED */
+  -o-box-sizing: border-box; /* ADDED */
+  box-sizing: border-box; /* ADDED */
+}
+
+.MuiSkeleton-wave::after {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(121, 116, 172, 0.07),
+    transparent
+  ) !important;
+  animation: MuiSkeleton-keyframes-wave 2s linear 0.5s infinite !important;
+}
+
+.react-toast-notifications__container {
+  z-index: 6000 !important;
+  color: "#e4e4e4";
+  font-family: "Rubik";
+  font-size: "14px";
+  opacity: 0.9;
+  font-weight: 500;
+  letter-spacing: ".1em";
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 14px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #282c33;
+  border-radius: 14px;
+}
+
+@keyframes explodeAni {
+  0% {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.5;
+  }
+  20% {
+    width: 100rem;
+    height: 100rem;
+    opacity: 0;
+  }
+  100% {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0;
+  }
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.progress {
+  display: -ms-flexbox;
+  display: flex;
+  height: 2rem;
+  overflow: hidden;
+  background: #141619;
+  line-height: 0;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+}
+.progress-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  color: rgb(226, 222, 222);
+  text-align: center;
+  white-space: nowrap;
+  background-color: #2a652b;
+  transition: width 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar {
+    transition: none;
+  }
+}
+.progress-bar-striped {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+}
+.progress-bar-animated {
+  -webkit-animation: progress-bar-stripes 1s linear infinite;
+  animation: progress-bar-stripes 1s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar-animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
